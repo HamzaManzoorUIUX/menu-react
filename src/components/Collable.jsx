@@ -4,7 +4,7 @@ import CollableItem from './CollableItem'
 const Collable = () => {
     const [state, setState] = useState([{
         title: 'Hats',
-        open: false,
+        open: true,
         items: [
             {
                 title: 'All Hats',
@@ -35,7 +35,7 @@ const Collable = () => {
     },
     {
         title: 'Bags',
-        open: true,
+        open: false,
         items: [
             {
                 title: 'All Bags',
