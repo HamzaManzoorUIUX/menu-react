@@ -51,12 +51,49 @@ body {
   }
 }
 
-@keyframes slide {
-  0% {
-    height: 100%;
+.slider-container {
+  width: 100%;
+  padding-left: 18px;
+
+  .title {
+    font-family: 'helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 9px;
+    cursor: pointer;
+
   }
 
-  100% {
-    height: 0px;
+  .slider-container-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+
+    .slider-container-wrapper-item {
+      width: 0px;
+      height: 0px;
+      padding-left: 45%;
+      padding-top: calc(45% * 1.5);
+      position: relative;
+      overflow: hidden;
+      // background-color: aqua;
+      img{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
