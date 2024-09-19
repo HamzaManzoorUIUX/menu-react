@@ -1,13 +1,17 @@
 import React from 'react'
-import Collable from './components/Collable'
+import Collapsable from './components/Collapsable'
 import Slider from './components/Slider'
+import { loadWebbridge, WebbridgeProvider } from "@tapcart/webbridge-react";
 
 const App = () => {
+  const webbridgeClient = loadWebbridge({ test: false });
   return (
+    <WebbridgeProvider webbridgeClient={webbridgeClient}>
     <div>
-      <Collable />
-      <Slider />
+      <Collapsable />
+      {/* <Slider /> */}
     </div>
+    </WebbridgeProvider>
   )
 }
 
