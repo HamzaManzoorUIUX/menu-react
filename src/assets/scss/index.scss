@@ -14,7 +14,7 @@ body {
   overflow-y: auto;
 
   &-item {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     width: 100%;
 
     h3 {
@@ -40,6 +40,11 @@ body {
 
       li {
         padding: 0;
+        text-decoration: none;
+        font-family: "helvetica", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: #000;
+        font-size: 14px;
+        line-height: 2.2;
 
         a {
           text-decoration: none;
@@ -48,6 +53,7 @@ body {
           font-size: 14px;
           line-height: 2.2;
         }
+
       }
     }
   }

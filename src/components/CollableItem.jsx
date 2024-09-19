@@ -9,9 +9,9 @@ const CollableItem = ({ data, changeOpen }) => {
                 {
                     data.items.map((item, index) => (
                         <li key={index}>
-                            <a href={item.link}>
+                           
                                 {item.title}
-                            </a>
+                      
                         </li>
                     ))
                 }

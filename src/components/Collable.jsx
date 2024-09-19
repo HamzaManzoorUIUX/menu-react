@@ -52,6 +52,68 @@ const Collable = () => {
             ,
         ]
     },
+    {
+        title: 'Knits',
+        open: false,
+        items: [
+            {
+                title: 'All Knits',
+                link: "/"
+            },
+            {
+                title: "Sweaters",
+                link: "/"
+            },
+            {
+                title: "Beanies + Hoods",
+                link: "/"
+            },
+            {
+                title: "Blankets+Scarves",
+                link: "/"
+            }
+        ]
+    },
+    {
+        title: 'Belts',
+        open: false,
+        items: [
+            {
+                title: 'All Belts',
+                link: "/"
+            },
+            {
+                title: "Classic Belts",
+                link: "/"
+            },
+            {
+                title: "Statement Belts",
+                link: "/"
+            }
+        ]
+    },
+    {
+        title: 'Accessories',
+        open: false,
+        items: [
+            {
+                title: 'All Accessories',
+                link: "/"
+            },
+            {
+                title: "Travel",
+                link: "/"
+            },
+            {
+                title: "Care",
+                link: "/"
+            },
+            {
+                title: "Gifts",
+                link: "/"
+            }
+        ]
+    },
     ])
     const changeOpen = (val) => {
         const data = [...state]
