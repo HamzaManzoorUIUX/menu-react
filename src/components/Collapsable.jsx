@@ -1,35 +1,35 @@
 import React, { useState } from 'react'
-import CollableItem from './CollableItem'
+import CollapsableItem from './CollapsableItem'
 
-const Collable = () => {
+const Collapsable = () => {
     const [state, setState] = useState([{
         title: 'Hats',
         open: true,
         items: [
             {
                 title: 'All Hats',
-                link: "/"
+                link: "262990331966"
             }
             ,
             {
                 title: "Packable Hats",
-                link: "/"
+                link: "179477053502"
             },
             {
                 title: "Bucket Hats",
-                link: "/"
+                link: "261911248958"
             },
             {
                 title: "Straw Hats",
-                link: "/"
+                link: "179454246974"
             },
             {
                 title: "Wool Hats",
-                link: "/"
+                link: "31001936"
             },
             {
                 title: "Ballcaps",
-                link: "/"
+                link: "262762102846"
             }
         ]
     },
@@ -39,15 +39,15 @@ const Collable = () => {
         items: [
             {
                 title: 'All Bags',
-                link: "/"
+                link: "261216895038"
             },
             {
                 title: "Leather Bags",
-                link: "/"
+                link: "270787149886"
             },
             {
                 title: "Straw Bags",
-                link: "/"
+                link: "264569356350"
             }
             ,
         ]
@@ -58,19 +58,23 @@ const Collable = () => {
         items: [
             {
                 title: 'All Knits',
-                link: "/"
+                link: "220127100990"
+            },
+            {
+                title: "Dresses",
+                link: "275792756798"
             },
             {
                 title: "Sweaters",
-                link: "/"
+                link: "263344029758"
             },
             {
                 title: "Beanies + Hoods",
-                link: "/"
+                link: "262991183934"
             },
             {
                 title: "Blankets+Scarves",
-                link: "/"
+                link: "262991118398"
             }
         ]
     },
@@ -80,15 +84,15 @@ const Collable = () => {
         items: [
             {
                 title: 'All Belts',
-                link: "/"
+                link: "162856796222"
             },
             {
                 title: "Classic Belts",
-                link: "/"
+                link: "272376004670"
             },
             {
                 title: "Statement Belts",
-                link: "/"
+                link: "272376037438"
             }
         ]
     },
@@ -98,19 +102,19 @@ const Collable = () => {
         items: [
             {
                 title: 'All Accessories',
-                link: "/"
+                link: "126755589"
             },
             {
                 title: "Travel",
-                link: "/"
+                link: "263657291838"
             },
             {
                 title: "Care",
-                link: "/"
+                link: "261927436350"
             },
             {
                 title: "Gifts",
-                link: "/"
+                link: "261621907518"
             }
         ]
     },
@@ -119,13 +123,15 @@ const Collable = () => {
         const data = [...state]
         setState(data.map(obj => obj.title === val ? { ...obj, open: true } : { ...obj, open: false }))
     }
+
+
     return (
-        <div className='collable'>
-            {state.map((item) => <CollableItem key={item.title} changeOpen={changeOpen} data={
+        <div className='collapsable'>
+            {state.map((item) => <CollapsableItem key={item.title} changeOpen={changeOpen} data={
                 item
             } />)}
         </div>
     )
 }
 
-export default Collable
+export default Collapsable
